@@ -181,7 +181,7 @@
       function dragging(e) {
         sliderContainer.classList.add('dragging')
         if (isDragging) {
-          sliderContainer.scrollBy(-e.movementX, 0);
+          sliderContainer.scrollLeft -=e.movementX;
         }
       }
       function startDragging(e) {
